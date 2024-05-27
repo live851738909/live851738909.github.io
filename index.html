@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #333;
+        }
+        .projects .project {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+        .contact {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .contact form button {
+            padding: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>个人网页</h1>
+        <p>欢迎来到我的个人网站！</p>
+    </div>
+    <div class="content">
+        <div class="section about">
+            <h2>关于我</h2>
+            <p>你好，我是[你的名字]，一名[你的职业]。我专注于[你的专业领域]，并且对[你的兴趣爱好]充满热情。</p>
+        </div>
+        <div class="section projects">
+            <h2>项目与作品</h2>
+            <div class="project">
+                <h3>项目名称1</h3>
+                <p>项目描述1</p>
+            </div>
+            <div class="project">
+                <h3>项目名称2</h3>
+                <p>项目描述2</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>联系方式</h2>
+        <form>
+            <input type="text" name="name" placeholder="你的名字" required>
+            <input type="email" name="email" placeholder="你的邮箱" required>
+            <textarea name="message" placeholder="你的留言" required></textarea>
+            <button type="submit">发送</button>
+        </form>
+    </div>
+</body>
+</html>
+
