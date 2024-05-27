@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh">
-![](https://lee.so/images/hi-im-nanxiaobei.svg)
-
-### Hi there, I'm 星语流 👋
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,33 +58,15 @@
 <body>
     <div class="header">
         <h1>个人网页</h1>
-        <p>欢迎来到我的个人网站！</p>
-    </div>
-    <div class="content">
-        <div class="section about">
-            <h2>关于我</h2>
-            <p>你好，我是[你的名字]，一名[你的职业]。我专注于[你的专业领域]，并且对[你的兴趣爱好]充满热情。</p>
-        </div>
-        <div class="section projects">
-            <h2>项目与作品</h2>
-            <div class="project">
-                <h3>项目名称1</h3>
-                <p>项目描述1</p>
-            </div>
-            <div class="project">
-                <h3>项目名称2</h3>
-                <p>项目描述2</p>
-            </div>
-        </div>
-    </div>
-    <div class="contact">
-        <h2>联系方式</h2>
-        <form>
-            <input type="text" name="name" placeholder="你的名字" required>
-            <input type="email" name="email" placeholder="你的邮箱" required>
-            <textarea name="message" placeholder="你的留言" required></textarea>
-            <button type="submit">发送</button>
-        </form>
+        <script>
+            const markdownContent = `
+            ![](https://lee.so/images/hi-im-nanxiaobei.svg)
+
+            ### Hi there, I'm 星语流 👋
+            `;
+    
+            document.getElementById('markdown-content').innerHTML = marked(markdownContent);
+        </script>
     </div>
 </body>
 </html>
